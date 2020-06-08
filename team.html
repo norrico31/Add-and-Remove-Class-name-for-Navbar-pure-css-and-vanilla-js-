@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team</title>
+    <title>Add or remove active class</title>
     <link rel="stylesheet" href="css/addRemove.css">
 </head>
 <body>
@@ -24,6 +24,7 @@
         const currentLocation = location.href;
         const menuItem = document.querySelectorAll('a');
         const menuLength = menuItem.length;
+        
         for(let i = 0; i < menuLength; i++) {
             if(menuItem[i].href === currentLocation) {
                 menuItem[i].className = "active";
